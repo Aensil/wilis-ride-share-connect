@@ -26,12 +26,11 @@ const SocialProof = () => {
         <div className="max-w-5xl mx-auto">
           <Card className="p-8 md:p-12 text-center shadow-2xl border-none bg-card/80 backdrop-blur-sm">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Una comunidad en crecimiento
+              Comunidad activa y creciendo
             </h2>
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              Ya somos más de <span className="font-bold text-primary">1000 miembros</span> en 7 grupos 
-              de WhatsApp. Miles de viajes compartidos entre Sogamoso, Duitama, Paipa, Tunja, 
-              Villa de Leyva y Bogotá.
+              Conectamos conductores y pasajeros en 7 grupos de WhatsApp entre Sogamoso, Duitama, 
+              Paipa, Tunja, Villa de Leyva y Bogotá. Viajes compartidos todos los días.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">

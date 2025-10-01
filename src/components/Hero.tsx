@@ -23,12 +23,16 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Wilis: La nueva forma de viajar
+          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight drop-shadow-lg">
+            Viaja Boyacá-Bogotá desde $15.000
           </h1>
           
-          <p className="text-xl md:text-3xl text-primary-foreground/90 font-medium">
-            Comparte, ahorra, conoce
+          <p className="text-xl md:text-2xl text-primary-foreground/95 font-medium">
+            Ahorra hasta 50% compartiendo carro en lugar de bus
+          </p>
+          
+          <p className="text-lg text-primary-foreground/85">
+            Conectamos conductores y pasajeros verificados en Boyacá y Bogotá
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">

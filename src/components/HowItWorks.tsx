@@ -5,20 +5,20 @@ const HowItWorks = () => {
     {
       number: "1",
       icon: MessageCircle,
-      title: "Ingresa al chat de WhatsApp",
-      description: "Entra directo a nuestro asistente con IA"
+      title: "Abre el chat de WhatsApp",
+      description: "Sin apps ni registros complicados. Dinos si eres conductor o pasajero"
     },
     {
       number: "2",
       icon: UserCheck,
-      title: "Elige tu rol (conductor o pasajero)",
-      description: "Publica tu trayecto o busca un asiento"
+      title: "Publica o encuentra tu viaje",
+      description: "Indica ruta, fecha y hora. Verás opciones al instante"
     },
     {
       number: "3",
       icon: Car,
-      title: "Conecta y viaja",
-      description: "Acuerda el viaje en minutos y arranca 🚗"
+      title: "Confirma y viaja",
+      description: "Coordinan punto, horario y precio. Pago directo entre ustedes"
     }
   ];
 
