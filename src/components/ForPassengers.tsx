@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Clock, Wallet, Gift } from "lucide-react";
+import { Clock, ShieldCheck, Wallet } from "lucide-react";
+
+import { contact } from "@/lib/site-data";
 
 const ForPassengers = () => {
   return (
@@ -11,9 +13,9 @@ const ForPassengers = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 order-2 md:order-1">
                 {[
-                  { icon: Clock, text: "Encuentra asiento en minutos" },
-                  { icon: Wallet, text: "Viaja más barato que en bus" },
-                  { icon: Gift, text: "Acumula beneficios" }
+                  { icon: Clock, text: "Solicita un asiento en minutos" },
+                  { icon: Wallet, text: "Ajusta el aporte según los gastos del trayecto" },
+                  { icon: ShieldCheck, text: "Coordinación directa con el conductor" },
                 ].map((item, index) => {
                   const Icon = item.icon;
                   return (
@@ -32,20 +34,17 @@ const ForPassengers = () => {
                   Ahorra más en cada viaje
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Encuentra un asiento disponible en minutos y viaja más barato, cómodo y 
-                  directo que en un bus. Además, con cada trayecto acumulas beneficios para 
-                  tus próximos viajes.
+                  Publica tu necesidad de viaje y recibirás opciones que se ajustan a tu fecha y horario. El aporte
+                  cubre gastos compartidos (gasolina, peajes) acordados directamente con el conductor.
                 </p>
-                <p className="text-xl font-semibold text-secondary">
-                  Sí, en cada viaje.
-                </p>
-                <Button 
-                  size="lg" 
+                <p className="text-xl font-semibold text-secondary">Coordinamos los detalles contigo.</p>
+                <Button
+                  size="lg"
                   variant="secondary"
                   className="w-full sm:w-auto shadow-lg hover:shadow-xl transition-all"
-                  onClick={() => window.open('https://wa.me/yourwhatsappnumber', '_blank')}
+                  onClick={() => window.open(contact.whatsappLink, "_blank", "noopener,noreferrer")}
                 >
-                  Busca tu próximo viaje
+                  Solicitar un cupo
                 </Button>
               </div>
             </div>

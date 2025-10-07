@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Gauge, TrendingDown, Route } from "lucide-react";
+import { ClipboardCheck, Gauge, Route } from "lucide-react";
+
+import { contact } from "@/lib/site-data";
 
 const ForDrivers = () => {
   return (
@@ -14,27 +16,25 @@ const ForDrivers = () => {
                   Ahorra mientras conduces
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Publica tu próximo viaje en WILIS S.A.S y comparte gastos con pasajeros que van 
-                  a tu mismo destino. Tardarás solo un par de minutos y podrás ahorrar hasta 
-                  un <span className="font-bold text-primary">30% de tus costos de viaje</span>.
+                  Comparte el trayecto que ya tienes planificado y reparte los gastos del viaje con pasajeros que
+                  siguen tu misma ruta. Nuestro equipo confirma cada publicación manualmente para mantener la
+                  comunidad segura.
                 </p>
-                <p className="text-xl font-semibold text-primary">
-                  ¿Compartimos trayecto?
-                </p>
-                <Button 
-                  size="lg" 
+                <p className="text-xl font-semibold text-primary">¿Coordinamos tu próximo viaje?</p>
+                <Button
+                  size="lg"
                   className="w-full sm:w-auto shadow-lg hover:shadow-xl transition-all"
-                  onClick={() => window.open('https://wa.me/yourwhatsappnumber', '_blank')}
+                  onClick={() => window.open(contact.whatsappLink, "_blank", "noopener,noreferrer")}
                 >
-                  Publica tu viaje ahora
+                  Enviar detalles por WhatsApp
                 </Button>
               </div>
 
               <div className="space-y-4">
                 {[
-                  { icon: Gauge, text: "Publica en minutos" },
-                  { icon: TrendingDown, text: "Ahorra hasta 30%" },
-                  { icon: Route, text: "Elige tu ruta y horario" }
+                  { icon: Gauge, text: "Publica tu cupo en menos de 5 minutos" },
+                  { icon: ClipboardCheck, text: "Validación humana antes de compartir" },
+                  { icon: Route, text: "Define tu ruta, horarios y condiciones" },
                 ].map((item, index) => {
                   const Icon = item.icon;
                   return (

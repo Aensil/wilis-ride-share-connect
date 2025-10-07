@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# WILIS S.A.S — Coordinación de viajes colaborativos
 
-## Project info
+Sitio landing desarrollado con React + Vite para presentar la propuesta de carpooling de WILIS S.A.S. El objetivo es explicar el servicio, invitar a la comunidad y dirigir los contactos hacia WhatsApp, manteniendo una comunicación honesta sobre el alcance real (coordinación manual, sin app propia).
 
-**URL**: https://lovable.dev/projects/1294b77d-4259-4847-964e-07c321b5b185
+## Características principales
+- Secciones informativas (beneficios, funcionamiento, FAQ y resultados del piloto) completamente editables.
+- Copia revisada para reflejar el estado actual del proyecto: coordinación manual vía WhatsApp y responsabilidad compartida entre los participantes.
+- Enlaces CTA centralizados en una sola variable (`VITE_WHATSAPP_LINK`) para evitar enlaces rotos.
+- Páginas legales simplificadas y consistentes con el servicio real, con fechas de actualización gestionadas desde configuración.
+- Configuración lista para desplegar en GitHub Pages o en cualquier servicio estático.
 
-## How can I edit this code?
+## Requisitos previos
+- Node.js 18 o superior.
+- npm 9 o superior.
 
-There are several ways of editing your application.
+## Instalación y uso
+1. Clona el repositorio y entra al directorio del proyecto.
+2. Crea un archivo `.env` a partir de `.env.example` y ajusta los valores.
+3. Instala dependencias y levanta el entorno de desarrollo:
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/1294b77d-4259-4847-964e-07c321b5b185) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Otras tareas disponibles:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run lint     # Ejecuta ESLint
+npm run check    # Lint + build (smoke test)
+npm run preview  # Sirve el build generado en local
+```
 
-**Use GitHub Codespaces**
+## Configuración mediante variables de entorno
+| Variable | Obligatoria | Descripción |
+|----------|-------------|-------------|
+| `VITE_WHATSAPP_LINK` | Sí | URL completa al chat oficial de WhatsApp (`https://wa.me/<número>`). |
+| `VITE_BASE_PATH` | No (por defecto `/`) | Ruta base usada en el build. Para GitHub Pages usa `/<nombre-del-repo>/`. |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+> Consejo: mantén los valores sensibles fuera del control de versiones usando `.env.local`.
 
-## What technologies are used for this project?
+## Estructura relevante
+- `src/lib/site-data.ts`: configuración reutilizable (WhatsApp, fecha legal y métricas del piloto).
+- `src/components/`: secciones del landing. Cada componente usa datos centralizados para facilitar ajustes.
+- `src/pages/`: páginas informativas incluidas en el router (`/`, `/terminos-condiciones`, `/politica-privacidad`).
 
-This project is built with:
+## Despliegue en GitHub Pages
+1. Asegúrate de haber configurado `VITE_BASE_PATH` con el nombre del repositorio (por ejemplo `/wilis-ride-share-connect/`).
+2. Ejecuta la verificación completa:
+   ```bash
+   npm run check
+   ```
+3. Lanza el despliegue:
+   ```bash
+   npm run deploy
+   ```
+   Este comando construye el proyecto y publica el contenido de `dist/` en la rama `gh-pages` mediante `gh-pages`.
+4. En GitHub, habilita Pages apuntando a la rama `gh-pages` (directorio raíz). Cada nuevo `npm run deploy` actualizará el sitio.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Personalización rápida
+- **Copy y cifras:** ajusta los textos de las secciones (por ejemplo `src/components/Benefits.tsx` o `src/components/SocialProof.tsx`).
+- **Aspecto visual:** modifica colores y gradientes en `src/index.css` o añade clases Tailwind directamente en los componentes.
+- **Fecha legal:** actualiza una sola vez en `src/lib/site-data.ts` para que se refleje en términos y privacidad.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1294b77d-4259-4847-964e-07c321b5b185) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Contribuciones y soporte
+Sugerencias y mejoras son bienvenidas. Antes de abrir un PR, ejecuta `npm run check` para validar que el proyecto compila sin advertencias.

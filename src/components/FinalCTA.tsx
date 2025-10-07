@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
+import { contact } from "@/lib/site-data";
+
 const FinalCTA = () => {
   return (
     <section className="py-24 bg-gradient-to-br from-primary via-primary to-secondary relative overflow-hidden">
@@ -18,14 +20,14 @@ const FinalCTA = () => {
           <p className="text-xl md:text-2xl text-white/90">
             Únete hoy a nuestra comunidad
           </p>
-          <Button 
+          <Button
             size="xl"
             variant="hero"
             className="bg-white text-primary hover:bg-white/90 hover:scale-105 shadow-2xl"
-            onClick={() => window.open('https://wa.me/yourwhatsappnumber', '_blank')}
+            onClick={() => window.open(contact.whatsappLink, "_blank", "noopener,noreferrer")}
           >
             <MessageCircle className="mr-2 h-6 w-6" />
-            Comenzar en WhatsApp
+            Coordinar por WhatsApp
           </Button>
         </div>
       </div>

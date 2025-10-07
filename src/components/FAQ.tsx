@@ -1,11 +1,39 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { contact } from "@/lib/site-data";
 
 const FAQ = () => {
+  const faqs = [
+    {
+      question: "¿Cómo coordino un viaje?",
+      answer:
+        "Escríbenos por WhatsApp con tu rol (conductor o pasajero), ruta, fecha y horario. Te conectaremos manualmente con personas compatibles para que acordéis los detalles directamente.",
+    },
+    {
+      question: "¿WILIS S.A.S cobra alguna comisión?",
+      answer:
+        "No. El servicio de coordinación es gratuito. Únicamente se comparte el aporte del viaje entre conductor y pasajeros para cubrir gastos como gasolina y peajes.",
+    },
+    {
+      question: "¿Cómo se define el aporte económico del viaje?",
+      answer:
+        "El monto se acuerda entre las partes según los costos reales del trayecto. Podemos orientarte con rangos de referencia, pero la decisión final siempre es del grupo que viaja.",
+    },
+    {
+      question: "¿Qué datos necesito compartir?",
+      answer:
+        "Solicitamos nombre completo, número de teléfono y ruta deseada. Para conductores también pedimos placa y horarios. Estos datos solo se usan para coordinar el viaje por WhatsApp.",
+    },
+    {
+      question: "¿Qué pasa si debo cancelar?",
+      answer:
+        "Avísanos por WhatsApp tan pronto como sea posible para reasignar el cupo o buscar una alternativa para ti. La comunicación temprana mantiene la confianza de la comunidad.",
+    },
+    {
+      question: "¿WILIS S.A.S presta un servicio de transporte?",
+      answer:
+        "No. Facilitamos el contacto entre particulares que ya tienen un trayecto programado. Cada viaje se realiza en vehículos privados y bajo responsabilidad de quienes participan.",
+    },
+  ];
+
   return (
     <section id="faq" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -19,113 +47,30 @@ const FAQ = () => {
             </p>
           </div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Cómo funcionan los pagos?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Los pagos se realizan directamente entre conductor y pasajero. Recomendamos acordar 
-                el monto antes del viaje ($15.000-$25.000 es el rango típico Boyacá-Bogotá) y pagar 
-                en efectivo al finalizar el trayecto o mediante transferencia bancaria/Nequi/Daviplata 
-                según acuerden. WILIS S.A.S no cobra comisiones.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Qué pasa si hay un accidente o problema durante el viaje?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Todos los conductores deben tener SOAT vigente (seguro obligatorio). En caso de 
-                emergencia, contacta inmediatamente a las autoridades (123) y luego repórtanos el 
-                incidente vía WhatsApp. Aunque WILIS S.A.S facilita la conexión, cada conductor es responsable 
-                de su vehículo y seguro. Te recomendamos verificar que el conductor tenga SOAT antes de viajar.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Cómo reporto un problema o mal comportamiento?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Escríbenos directamente al chat de WhatsApp oficial de WILIS S.A.S. Proporciónanos detalles 
-                del incidente (fecha, hora, nombres de usuarios involucrados). Investigamos todos los 
-                reportes en 24-48 horas. Usuarios con 3 o más reportes negativos son suspendidos 
-                permanentemente de la comunidad.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Cómo verifican a los conductores?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Solicitamos foto de la cédula, licencia de conducción vigente, y SOAT del vehículo. 
-                Adicionalmente, todos los usuarios (conductores y pasajeros) acumulan calificaciones 
-                y reseñas después de cada viaje. Puedes ver el perfil y calificaciones antes de aceptar un viaje.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Puedo cancelar un viaje?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Sí, pero te pedimos avisar con al menos 2 horas de anticipación para no afectar los 
-                planes de otros usuarios. Cancelaciones de último minuto (menos de 30 minutos antes) 
-                sin justificación pueden resultar en advertencias. Más de 3 cancelaciones de último 
-                minuto = suspensión temporal de 30 días.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿WILIS S.A.S cobra alguna comisión?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                No. WILIS S.A.S es una plataforma colaborativa 100% gratuita. El único pago es entre 
-                conductor y pasajero por los gastos compartidos del viaje (gasolina, peajes). 
-                Nuestro modelo es mantener la comunidad activa y segura, no cobrar comisiones.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Es legal compartir viajes así?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Sí, es completamente legal. WILIS S.A.S no es un servicio de transporte público. Es una 
-                plataforma de carpooling (viajes compartidos) donde particulares comparten gastos 
-                de viajes que ya iban a realizar. El conductor no obtiene ganancias, solo recupera 
-                costos (gasolina, peajes). Esto está permitido bajo la legislación colombiana.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8" className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
-                ¿Qué ciudades cubren?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Actualmente conectamos: Bogotá ↔ Tunja, Sogamoso, Duitama, Paipa, Villa de Leyva, 
-                y otros municipios de Boyacá. La mayoría de viajes son en la ruta Bogotá-Tunja-Sogamoso 
-                (y viceversa), especialmente viernes/domingos.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group rounded-lg border border-border bg-card px-6 py-4">
+                <summary className="flex cursor-pointer list-none items-center justify-between text-left text-lg font-semibold text-foreground transition-colors group-open:text-primary">
+                  {faq.question}
+                  <span className="ml-3 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <div className="pt-3 text-muted-foreground">{faq.answer}</div>
+              </details>
+            ))}
+          </div>
 
           <div className="mt-12 text-center">
             <p className="text-muted-foreground mb-4">
               ¿Tienes otra pregunta?
             </p>
             <a
-              href="https://wa.me/yourwhatsappnumber"
+              href={contact.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2"
             >
               Contáctanos por WhatsApp
-              <span className="text-xl">→</span>
+              <span className="text-xl">&gt;</span>
             </a>
           </div>
         </div>

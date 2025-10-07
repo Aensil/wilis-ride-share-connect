@@ -1,41 +1,22 @@
 import { Card } from "@/components/ui/card";
-import { Users, MapPin, MessageCircle } from "lucide-react";
+import { communityStats, statsFootnote } from "@/lib/site-data";
 
 const SocialProof = () => {
-  const stats = [
-    {
-      icon: Users,
-      value: "5000+",
-      label: "Miembros activos"
-    },
-    {
-      icon: MapPin,
-      value: "+1500",
-      label: "Viajes conectados"
-    },
-    {
-      icon: MessageCircle,
-      value: "+7",
-      label: "Ciudades conectadas"
-    }
-  ];
-
   return (
     <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              La comunidad de WILIS S.A.S crece cada día
+              Resultados del piloto WILIS S.A.S
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Miles de viajeros confían en WILIS S.A.S para conectar entre Sogamoso, Duitama,
-              Paipa, Tunja, Villa de Leyva, Bogotá y más ciudades.
+              Acompañamos una red pequeña pero activa que coordina viajes colaborativos en la ruta Boyacá - Bogotá.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => {
+            {communityStats.map((stat, index) => {
               const Icon = stat.icon;
               return (
                 <Card key={index} className="relative overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -53,6 +34,8 @@ const SocialProof = () => {
               );
             })}
           </div>
+
+          <p className="mt-8 text-center text-sm text-muted-foreground">{statsFootnote}</p>
         </div>
       </div>
     </section>
