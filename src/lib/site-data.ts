@@ -7,7 +7,7 @@ export const contact = {
 };
 
 export const legal = {
-  lastUpdated: "1 de febrero de 2025",
+  lastUpdated: "11 de febrero de 2025",
 };
 
 export const communityStats = [
