@@ -15,7 +15,7 @@ const FAQ = () => {
               Preguntas frecuentes
             </h2>
             <p className="text-lg text-muted-foreground">
-              Todo lo que necesitas saber sobre Wilis
+              Todo lo que necesitas saber sobre WILIS S.A.S
             </p>
           </div>
 
@@ -28,7 +28,7 @@ const FAQ = () => {
                 Los pagos se realizan directamente entre conductor y pasajero. Recomendamos acordar 
                 el monto antes del viaje ($15.000-$25.000 es el rango típico Boyacá-Bogotá) y pagar 
                 en efectivo al finalizar el trayecto o mediante transferencia bancaria/Nequi/Daviplata 
-                según acuerden. Wilis no cobra comisiones.
+                según acuerden. WILIS S.A.S no cobra comisiones.
               </AccordionContent>
             </AccordionItem>
 
@@ -39,7 +39,7 @@ const FAQ = () => {
               <AccordionContent className="text-muted-foreground">
                 Todos los conductores deben tener SOAT vigente (seguro obligatorio). En caso de 
                 emergencia, contacta inmediatamente a las autoridades (123) y luego repórtanos el 
-                incidente vía WhatsApp. Aunque Wilis facilita la conexión, cada conductor es responsable 
+                incidente vía WhatsApp. Aunque WILIS S.A.S facilita la conexión, cada conductor es responsable 
                 de su vehículo y seguro. Te recomendamos verificar que el conductor tenga SOAT antes de viajar.
               </AccordionContent>
             </AccordionItem>
@@ -49,7 +49,7 @@ const FAQ = () => {
                 ¿Cómo reporto un problema o mal comportamiento?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Escríbenos directamente al chat de WhatsApp oficial de Wilis. Proporciónanos detalles 
+                Escríbenos directamente al chat de WhatsApp oficial de WILIS S.A.S. Proporciónanos detalles 
                 del incidente (fecha, hora, nombres de usuarios involucrados). Investigamos todos los 
                 reportes en 24-48 horas. Usuarios con 3 o más reportes negativos son suspendidos 
                 permanentemente de la comunidad.
@@ -81,10 +81,10 @@ const FAQ = () => {
 
             <AccordionItem value="item-6" className="bg-card border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left font-semibold">
-                ¿Wilis cobra alguna comisión?
+                ¿WILIS S.A.S cobra alguna comisión?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                No. Wilis es una plataforma colaborativa 100% gratuita. El único pago es entre 
+                No. WILIS S.A.S es una plataforma colaborativa 100% gratuita. El único pago es entre 
                 conductor y pasajero por los gastos compartidos del viaje (gasolina, peajes). 
                 Nuestro modelo es mantener la comunidad activa y segura, no cobrar comisiones.
               </AccordionContent>
@@ -95,7 +95,7 @@ const FAQ = () => {
                 ¿Es legal compartir viajes así?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Sí, es completamente legal. Wilis no es un servicio de transporte público. Es una 
+                Sí, es completamente legal. WILIS S.A.S no es un servicio de transporte público. Es una 
                 plataforma de carpooling (viajes compartidos) donde particulares comparten gastos 
                 de viajes que ya iban a realizar. El conductor no obtiene ganancias, solo recupera 
                 costos (gasolina, peajes). Esto está permitido bajo la legislación colombiana.

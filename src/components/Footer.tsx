@@ -5,10 +5,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              © 2025 Wilis. Todos los derechos reservados.
+              © 2025 WILIS S.A.S. Todos los derechos reservados.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              Wilis es una comunidad colaborativa. Los viajes son organizados directamente 
+              WILIS S.A.S es una comunidad colaborativa. Los viajes son organizados directamente
               entre conductores y pasajeros. Aplican condiciones de uso.
             </p>
           </div>

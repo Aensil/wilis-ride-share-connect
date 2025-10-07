@@ -31,7 +31,7 @@ const PoliticaPrivacidad = () => {
                 1. Introducción
               </h2>
               <p className="text-muted-foreground">
-                En Wilis respetamos tu privacidad y nos comprometemos a proteger tus datos personales. 
+                En WILIS S.A.S respetamos tu privacidad y nos comprometemos a proteger tus datos personales. 
                 Esta política de privacidad explica cómo recopilamos, usamos, almacenamos y compartimos 
                 tu información cuando utilizas nuestro servicio.
               </p>
@@ -42,7 +42,7 @@ const PoliticaPrivacidad = () => {
                 2. Información que Recopilamos y Base Legal
               </h2>
               <p className="text-muted-foreground mb-3">
-                Recopilamos la siguiente información cuando utilizas Wilis, conforme a la Ley 1581 de 2012:
+                Recopilamos la siguiente información cuando utilizas WILIS S.A.S, conforme a la Ley 1581 de 2012:
               </p>
               
               <h3 className="text-xl font-semibold text-foreground mt-4 mb-3">
@@ -104,7 +104,7 @@ const PoliticaPrivacidad = () => {
               </p>
               
               <h3 className="text-xl font-semibold text-foreground mt-4 mb-3">
-                Con otros usuarios de Wilis (solo cuando aceptas un viaje):
+                Con otros usuarios de WILIS S.A.S (solo cuando aceptas un viaje):
               </h3>
               <p className="text-muted-foreground mb-2">
                 Cuando aceptas o publicas un viaje, compartimos con la contraparte:
@@ -119,7 +119,7 @@ const PoliticaPrivacidad = () => {
               <div className="mt-3 p-3 bg-destructive/10 border border-destructive/20 rounded-lg">
                 <p className="text-sm text-muted-foreground">
                   <strong className="text-foreground">IMPORTANTE - Privacidad de WhatsApp:</strong> Al compartir 
-                  tu número de WhatsApp con otros usuarios, reconoces que este quedará visible para ellos. Wilis 
+                  tu número de WhatsApp con otros usuarios, reconoces que este quedará visible para ellos. WILIS S.A.S 
                   recomienda usar configuraciones de privacidad de WhatsApp (ocultar foto, última conexión, etc.) 
                   para proteger tu información.
                 </p>
@@ -140,7 +140,7 @@ const PoliticaPrivacidad = () => {
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>Cuando sea requerido por orden judicial o autoridad competente colombiana</li>
                 <li>Para prevenir, detectar, o procesar actividades ilegales o fraude</li>
-                <li>Para proteger derechos, propiedad, o seguridad de Wilis o sus usuarios</li>
+                <li>Para proteger derechos, propiedad, o seguridad de WILIS S.A.S o sus usuarios</li>
               </ul>
 
               <p className="text-muted-foreground mt-3">
@@ -154,7 +154,7 @@ const PoliticaPrivacidad = () => {
                 5. WhatsApp y Comunicaciones
               </h2>
               <p className="text-muted-foreground">
-                Wilis opera principalmente a través de WhatsApp. Al utilizar nuestro servicio a través 
+                WILIS S.A.S opera principalmente a través de WhatsApp. Al utilizar nuestro servicio a través 
                 de WhatsApp, también estás sujeto a los términos y políticas de privacidad de WhatsApp 
                 y Meta. Te recomendamos revisar dichas políticas para entender cómo manejan tu información.
               </p>
@@ -194,7 +194,7 @@ const PoliticaPrivacidad = () => {
               <div className="mt-4 p-4 bg-muted border border-border rounded-lg">
                 <p className="text-sm text-muted-foreground">
                   <strong className="text-foreground">LIMITACIÓN:</strong> A pesar de estas medidas, ningún sistema 
-                  de transmisión o almacenamiento digital es 100% seguro. Wilis no puede garantizar seguridad absoluta 
+                  de transmisión o almacenamiento digital es 100% seguro. WILIS S.A.S no puede garantizar seguridad absoluta 
                   pero se compromete a implementar las mejores prácticas de la industria.
                 </p>
               </div>
@@ -263,7 +263,7 @@ const PoliticaPrivacidad = () => {
                   </p>
                   <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 ml-4">
                     <li>Email: <span className="text-foreground">privacidad@wilis.co</span></li>
-                    <li>WhatsApp: Mensaje directo al chat oficial de Wilis</li>
+                    <li>WhatsApp: Mensaje directo al chat oficial de WILIS S.A.S</li>
                     <li>Incluye: Nombre completo, cédula, número WhatsApp registrado, descripción clara de tu solicitud</li>
                   </ul>
                 </div>
@@ -318,7 +318,7 @@ const PoliticaPrivacidad = () => {
                 9. Menores de Edad
               </h2>
               <p className="text-muted-foreground">
-                Wilis está destinado a usuarios mayores de 18 años. No recopilamos intencionalmente 
+                WILIS S.A.S está destinado a usuarios mayores de 18 años. No recopilamos intencionalmente 
                 información de menores de edad. Si descubrimos que hemos recopilado información de un 
                 menor, la eliminaremos inmediatamente.
               </p>
@@ -374,7 +374,7 @@ const PoliticaPrivacidad = () => {
                 12. Transferencias Internacionales de Datos
               </h2>
               <p className="text-muted-foreground mb-3">
-                Wilis opera principalmente en Colombia, pero algunos servicios implican transferencias internacionales:
+                WILIS S.A.S opera principalmente en Colombia, pero algunos servicios implican transferencias internacionales:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li><strong className="text-foreground">WhatsApp/Meta:</strong> Al usar WhatsApp, tus datos se procesan en servidores de Meta (Estados Unidos e Irlanda). WhatsApp tiene su propia política de privacidad que debes revisar.</li>
@@ -394,7 +394,7 @@ const PoliticaPrivacidad = () => {
               <ul className="list-none text-muted-foreground space-y-2 ml-4 mt-3">
                 <li>📧 <strong className="text-foreground">Email DPO:</strong> dpo@wilis.co</li>
                 <li>📧 <strong className="text-foreground">Email privacidad:</strong> privacidad@wilis.co</li>
-                <li>🏢 <strong className="text-foreground">Responsable del tratamiento:</strong> Wilis Colombia</li>
+                <li>🏢 <strong className="text-foreground">Responsable del tratamiento:</strong> WILIS S.A.S</li>
               </ul>
             </section>
 
@@ -416,7 +416,7 @@ const PoliticaPrivacidad = () => {
 
             <section className="mt-8 p-4 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-sm text-muted-foreground">
-                <strong>Nota importante:</strong> Al continuar utilizando Wilis, aceptas esta política 
+                <strong>Nota importante:</strong> Al continuar utilizando WILIS S.A.S, aceptas esta política 
                 de privacidad y el tratamiento de tus datos personales según lo descrito en este documento.
               </p>
             </section>

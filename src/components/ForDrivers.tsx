@@ -14,7 +14,7 @@ const ForDrivers = () => {
                   Ahorra mientras conduces
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Publica tu próximo viaje en Wilis y comparte gastos con pasajeros que van 
+                  Publica tu próximo viaje en WILIS S.A.S y comparte gastos con pasajeros que van 
                   a tu mismo destino. Tardarás solo un par de minutos y podrás ahorrar hasta 
                   un <span className="font-bold text-primary">30% de tus costos de viaje</span>.
                 </p>

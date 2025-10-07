@@ -26,10 +26,10 @@ const SocialProof = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              La comunidad de Wilis crece cada día
+              La comunidad de WILIS S.A.S crece cada día
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Miles de viajeros confían en Wilis para conectar entre Sogamoso, Duitama, 
+              Miles de viajeros confían en WILIS S.A.S para conectar entre Sogamoso, Duitama,
               Paipa, Tunja, Villa de Leyva, Bogotá y más ciudades.
             </p>
           </div>
