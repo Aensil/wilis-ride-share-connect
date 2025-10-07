@@ -8,8 +8,8 @@ const Footer = () => {
               © 2025 WILIS S.A.S. Todos los derechos reservados.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              WILIS S.A.S es una comunidad colaborativa. Los viajes son organizados directamente
-              entre conductores y pasajeros. Aplican condiciones de uso.
+              WILIS S.A.S coordina viajes colaborativos de manera manual vía WhatsApp. Cada trayecto es organizado
+              directamente entre conductores y pasajeros. Aplican condiciones de uso.
             </p>
           </div>
           

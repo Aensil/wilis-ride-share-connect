@@ -11,14 +11,14 @@ const HowItWorks = () => {
     {
       number: "2",
       icon: UserCheck,
-      title: "Publica o encuentra tu viaje",
-      description: "Indica ruta, fecha y hora. Verás opciones al instante"
+      title: "Cuéntanos tu trayecto",
+      description: "Compartes ruta, horarios y condiciones. Nuestro equipo cruza la información manualmente"
     },
     {
       number: "3",
       icon: Car,
       title: "Confirma y viaja",
-      description: "Coordinan punto, horario y precio. Pago directo entre ustedes"
+      description: "Definimos punto de encuentro, aporte y seguimiento. El pago se hace directamente entre ustedes"
     }
   ];
 

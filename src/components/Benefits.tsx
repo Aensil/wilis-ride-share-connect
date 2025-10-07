@@ -5,22 +5,22 @@ const Benefits = () => {
   const benefits = [
     {
       icon: Car,
-      title: "Llega 2 horas antes",
-      description: "Viajes directos sin paradas. Tunja-Bogotá en 2.5 horas vs 4+ en bus",
-      gradient: "from-primary to-primary-glow"
+      title: "Trayectos directos",
+      description: "Coordina salidas y paradas con tu grupo para viajar sin desvíos innecesarios.",
+      gradient: "from-primary to-primary-glow",
     },
     {
       icon: DollarSign,
-      title: "Ahorra hasta 50%",
-      description: "$15.000-$20.000 vs $30.000-$40.000 en bus o transporte privado",
-      gradient: "from-secondary to-secondary-glow"
+      title: "Comparte los gastos reales",
+      description: "Reparte gasolina, peajes y parqueaderos entre todos los ocupantes del vehículo.",
+      gradient: "from-secondary to-secondary-glow",
     },
     {
       icon: Users,
-      title: "Comunidad verificada",
-      description: "Usuarios validados con reseñas reales y calificaciones",
-      gradient: "from-accent to-accent/80"
-    }
+      title: "Coordinación acompañada",
+      description: "Nuestro equipo facilita el contacto y mantiene seguimiento de cada viaje coordinado.",
+      gradient: "from-accent to-accent/80",
+    },
   ];
 
   return (
