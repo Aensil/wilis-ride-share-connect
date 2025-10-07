@@ -7,11 +7,10 @@ const SocialProof = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              Resultados del piloto WILIS S.A.S
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground">Nuestra comunidad en números</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Acompañamos una red pequeña pero activa que coordina viajes colaborativos en la ruta Boyacá - Bogotá.
+              Ya somos más de 4.500 personas en 7 grupos de WhatsApp compartiendo viajes entre Boyacá, Cundinamarca y
+              muchas otras rutas de Colombia.
             </p>
           </div>
 

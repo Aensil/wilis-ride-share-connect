@@ -30,21 +30,20 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight drop-shadow-lg">
-            Comparte tu trayecto Boyacá - Bogotá
+            WILIS S.A.S: la nueva forma de viajar
           </h1>
 
-          <p className="text-xl md:text-2xl text-primary-foreground/95 font-medium">
-            Coordina viajes colaborativos y reparte gastos con personas que siguen tu misma ruta.
-          </p>
+          <p className="text-xl md:text-2xl text-primary-foreground/95 font-medium">Comparte, ahorra, conoce.</p>
 
           <p className="text-lg text-primary-foreground/85">
-            Todo se conversa por WhatsApp: sin apps nuevas, sin registros complicados.
+            Conecta con un conductor verificado, acuerda tu punto de partida y olvídate de hacer filas en terminales.
+            Boyacá, Cundinamarca y todo Colombia a un chat de distancia.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button size="xl" variant="hero" onClick={openWhatsApp} className="group">
               <MessageCircle className="mr-2 h-6 w-6 group-hover:scale-110 transition-transform" />
-              Coordina tu viaje en WhatsApp
+              Ir al chat en WhatsApp
             </Button>
 
             <Button size="xl" variant="heroSecondary" onClick={() => scrollToSection("como-funciona")}>

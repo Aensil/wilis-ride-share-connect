@@ -17,9 +17,7 @@ const FinalCTA = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
             WILIS S.A.S: la nueva forma de viajar
           </h2>
-          <p className="text-xl md:text-2xl text-white/90">
-            Únete hoy a nuestra comunidad
-          </p>
+          <p className="text-xl md:text-2xl text-white/90">Únete hoy a nuestra comunidad.</p>
           <Button
             size="xl"
             variant="hero"
@@ -27,7 +25,7 @@ const FinalCTA = () => {
             onClick={() => window.open(contact.whatsappLink, "_blank", "noopener,noreferrer")}
           >
             <MessageCircle className="mr-2 h-6 w-6" />
-            Coordinar por WhatsApp
+            Comenzar en WhatsApp
           </Button>
         </div>
       </div>

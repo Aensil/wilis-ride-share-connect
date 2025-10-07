@@ -13,9 +13,9 @@ const ForPassengers = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 order-2 md:order-1">
                 {[
-                  { icon: Clock, text: "Solicita un asiento en minutos" },
-                  { icon: Wallet, text: "Ajusta el aporte según los gastos del trayecto" },
-                  { icon: ShieldCheck, text: "Coordinación directa con el conductor" },
+                  { icon: Clock, text: "Encuentra un asiento disponible en minutos" },
+                  { icon: Wallet, text: "Viaja más barato y paga solo tu aporte" },
+                  { icon: ShieldCheck, text: "Coordinación asistida y conductores verificados" },
                 ].map((item, index) => {
                   const Icon = item.icon;
                   return (
@@ -34,8 +34,8 @@ const ForPassengers = () => {
                   Ahorra más en cada viaje
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Publica tu necesidad de viaje y recibirás opciones que se ajustan a tu fecha y horario. El aporte
-                  cubre gastos compartidos (gasolina, peajes) acordados directamente con el conductor.
+                  Encuentra un asiento disponible en minutos y viaja más barato, cómodo y directo que en un bus. Con cada
+                  trayecto acumulas beneficios para tus próximos viajes. Sí, en cada viaje.
                 </p>
                 <p className="text-xl font-semibold text-secondary">Coordinamos los detalles contigo.</p>
                 <Button
