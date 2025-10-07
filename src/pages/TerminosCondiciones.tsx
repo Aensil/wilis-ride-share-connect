@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { legal } from "@/lib/site-data";
+import { Button } from "@/ui/Button";
+import MainLayout from "@/layouts/MainLayout";
+import { legal } from "@/config/legal";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -11,14 +12,19 @@ const TerminosCondiciones = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-accent/5">
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <Button variant="ghost" onClick={() => navigate("/")} className="mb-6">
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Volver al inicio
-        </Button>
+    <MainLayout
+      canonicalPath="/terminos-condiciones"
+      title="Términos y Condiciones | WILIS S.A.S"
+      description="Consulta las reglas de uso de la comunidad colaborativa de viajes de WILIS S.A.S."
+    >
+      <div className="bg-gradient-to-b from-background to-accent/5">
+        <div className="container mx-auto max-w-4xl px-[var(--container-padding-x)] py-8">
+          <Button variant="ghost" onClick={() => navigate("/")} className="mb-6">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Volver al inicio
+          </Button>
 
-        <article className="bg-card rounded-lg shadow-lg px-6 py-10 md:px-12 md:py-14 space-y-10">
+          <article className="space-y-10 rounded-lg bg-card px-6 py-10 shadow-lg md:px-12 md:py-14">
           <header className="space-y-3 text-center md:text-left">
             <p className="text-sm uppercase tracking-wide text-muted-foreground">Términos y condiciones de WILIS S.A.S</p>
             <h1 className="text-4xl font-bold text-primary">Condiciones de uso del programa de viajes colaborativos</h1>
@@ -214,9 +220,10 @@ const TerminosCondiciones = () => {
               Atenderemos tus solicitudes dentro de los plazos establecidos por la normatividad colombiana aplicable.
             </p>
           </section>
-        </article>
+          </article>
+        </div>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 

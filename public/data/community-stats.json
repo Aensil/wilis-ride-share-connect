@@ -1,0 +1,8 @@
+{
+  "stats": [
+    { "icon": "users", "value": "4.800+", "label": "Personas en la comunidad" },
+    { "icon": "message", "value": "7", "label": "Grupos activos en WhatsApp" },
+    { "icon": "route", "value": "3.200+", "label": "Viajes coordinados en Colombia" }
+  ],
+  "footnote": "Datos consolidados de la comunidad WILIS S.A.S. Actualizado: febrero 2025."
+}

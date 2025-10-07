@@ -1,10 +1,11 @@
 import { forwardRef } from "react";
 import type { ButtonHTMLAttributes } from "react";
+import { Slot } from "@radix-ui/react-slot";
 
 import { cn } from "@/lib/utils";
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "outline" | "hero" | "heroSecondary";
-type ButtonSize = "default" | "sm" | "lg" | "xl" | "icon";
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "outline" | "hero" | "heroSecondary";
+export type ButtonSize = "default" | "sm" | "lg" | "xl" | "icon";
 
 const baseClasses =
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
@@ -22,24 +23,28 @@ const sizeClasses: Record<ButtonSize, string> = {
   default: "h-10 px-4 text-sm",
   sm: "h-9 px-3 text-sm",
   lg: "h-11 px-8 text-base",
-  xl: "h-14 px-10 text-lg rounded-lg",
+  xl: "h-14 px-10 text-[length:var(--font-size-button)] rounded-lg",
   icon: "h-10 w-10",
 };
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
   size?: ButtonSize;
+  asChild?: boolean;
 };
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "primary", size = "default", type = "button", ...props }, ref) => (
-    <button
-      ref={ref}
-      type={type}
-      className={cn(baseClasses, variantClasses[variant], sizeClasses[size], className)}
-      {...props}
-    />
-  ),
+  ({ className, variant = "primary", size = "default", type = "button", asChild = false, ...props }, ref) => {
+    const Component = asChild ? Slot : "button";
+    return (
+      <Component
+        ref={ref}
+        type={asChild ? undefined : type}
+        className={cn(baseClasses, variantClasses[variant], sizeClasses[size], className)}
+        {...props}
+      />
+    );
+  },
 );
 
 Button.displayName = "Button";
