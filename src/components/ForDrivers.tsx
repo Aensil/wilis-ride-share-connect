@@ -16,9 +16,8 @@ const ForDrivers = () => {
                   Ahorra mientras conduces
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Comparte el trayecto que ya tienes planificado y reparte los gastos del viaje con pasajeros que
-                  siguen tu misma ruta. Nuestro equipo confirma cada publicación manualmente para mantener la
-                  comunidad segura.
+                  Publica tu próximo viaje en WILIS S.A.S y comparte gastos con pasajeros que van a tu mismo destino.
+                  Tardarás solo un par de minutos y podrás ahorrar hasta un 30% de tus costos. ¿Compartimos trayecto?
                 </p>
                 <p className="text-xl font-semibold text-primary">¿Coordinamos tu próximo viaje?</p>
                 <Button
@@ -32,9 +31,9 @@ const ForDrivers = () => {
 
               <div className="space-y-4">
                 {[
-                  { icon: Gauge, text: "Publica tu cupo en menos de 5 minutos" },
-                  { icon: ClipboardCheck, text: "Validación humana antes de compartir" },
-                  { icon: Route, text: "Define tu ruta, horarios y condiciones" },
+                  { icon: Gauge, text: "Publica tu cupo en cuestión de minutos" },
+                  { icon: ClipboardCheck, text: "Validación manual y conductores verificados" },
+                  { icon: Route, text: "Define ruta, horarios y condiciones a tu medida" },
                 ].map((item, index) => {
                   const Icon = item.icon;
                   return (

@@ -5,20 +5,20 @@ const Benefits = () => {
   const benefits = [
     {
       icon: Car,
-      title: "Trayectos directos",
-      description: "Coordina salidas y paradas con tu grupo para viajar sin desvíos innecesarios.",
+      title: "Sal de las filas",
+      description: "Coordina tu salida sin esperar buses llenos ni filas interminables en terminales.",
       gradient: "from-primary to-primary-glow",
     },
     {
       icon: DollarSign,
-      title: "Comparte los gastos reales",
-      description: "Reparte gasolina, peajes y parqueaderos entre todos los ocupantes del vehículo.",
+      title: "Paga menos en cada trayecto",
+      description: "Comparte los gastos reales del viaje y ahorra desde el primer recorrido.",
       gradient: "from-secondary to-secondary-glow",
     },
     {
       icon: Users,
-      title: "Coordinación acompañada",
-      description: "Nuestro equipo facilita el contacto y mantiene seguimiento de cada viaje coordinado.",
+      title: "Viaja en comunidad",
+      description: "Conoce personas nuevas y coordina con acompañamiento de WILIS S.A.S.",
       gradient: "from-accent to-accent/80",
     },
   ];

@@ -13,19 +13,19 @@ export const legal = {
 export const communityStats = [
   {
     icon: Users,
-    value: "200+",
-    label: "Personas en la lista de espera",
+    value: "4.500+",
+    label: "Personas en la comunidad",
   },
   {
     icon: MessageCircle,
-    value: "24h",
-    label: "Tiempo promedio de respuesta",
+    value: "7",
+    label: "Grupos activos en WhatsApp",
   },
   {
     icon: Route,
-    value: "Boyacá - Bogotá",
-    label: "Ruta activa del piloto",
+    value: "3.000+",
+    label: "Viajes coordinados en Colombia",
   },
 ] as const;
 
-export const statsFootnote = "Cifras referenciales del piloto colaborativo 2024-2025.";
+export const statsFootnote = "Actualizado con datos consolidados de los grupos de WhatsApp 2024-2025.";
