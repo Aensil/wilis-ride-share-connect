@@ -39,31 +39,41 @@ All colors MUST be HSL.
     --ring: 142 76% 36%;
 
     --radius: 0.75rem;
-    
+
+    --font-size-display: clamp(2.75rem, 2rem + 2.2vw, 4.75rem);
+    --font-size-h1: clamp(2.5rem, 1.5rem + 2vw, 4rem);
+    --font-size-h2: clamp(2rem, 1.25rem + 1.5vw, 3.25rem);
+    --font-size-h3: clamp(1.5rem, 1.1rem + 1vw, 2rem);
+    --font-size-lead: clamp(1.25rem, 1.1rem + 0.8vw, 1.65rem);
+    --font-size-body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+    --font-size-button: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --font-size-small: clamp(0.875rem, 0.85rem + 0.15vw, 0.95rem);
+
+    --section-padding-y: clamp(3rem, 2rem + 2vw, 7rem);
+    --container-padding-x: clamp(1rem, 0.75rem + 1vw, 2.5rem);
+    --header-height: clamp(4rem, 3.5rem + 1vw, 5.25rem);
+
     --gradient-hero: linear-gradient(135deg, hsl(142 76% 36%), hsl(210 100% 50%));
     --gradient-driver: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 50%));
     --gradient-passenger: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 65%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 13% 98%));
-    
+    --hero-overlay-glow: radial-gradient(120% 90% at 15% 20%, hsl(142 76% 45% / 0.25), transparent),
+      radial-gradient(80% 75% at 85% 15%, hsl(210 100% 60% / 0.25), transparent),
+      linear-gradient(135deg, hsl(142 76% 30% / 0.65), hsl(210 100% 45% / 0.5));
+
     --shadow-elegant: 0 10px 40px -10px hsl(142 76% 36% / 0.3);
-    --shadow-card: 0 4px 20px -5px hsl(220 15% 20% / 0.1);
-    
+    --shadow-card: 0 4px 20px -5px hsl(220 15% 20% / 0.12);
+    --shadow-overlay: 0 40px 80px -40px hsl(210 100% 35% / 0.4);
+
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,14 +107,19 @@ All colors MUST be HSL.
     --border: 220 20% 25%;
     --input: 220 20% 25%;
     --ring: 142 76% 50%;
-    
+
     --gradient-hero: linear-gradient(135deg, hsl(142 76% 40%), hsl(210 100% 45%));
     --gradient-driver: linear-gradient(135deg, hsl(142 76% 40%), hsl(142 76% 55%));
     --gradient-passenger: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 60%));
     --gradient-subtle: linear-gradient(180deg, hsl(220 25% 10%), hsl(220 20% 15%));
-    
+    --hero-overlay-glow: radial-gradient(120% 90% at 20% 20%, hsl(142 76% 50% / 0.25), transparent),
+      radial-gradient(70% 80% at 80% 10%, hsl(210 100% 60% / 0.2), transparent),
+      linear-gradient(135deg, hsl(220 70% 12% / 0.7), hsl(210 70% 25% / 0.55));
+
     --shadow-elegant: 0 10px 40px -10px hsl(142 76% 50% / 0.4);
-    --shadow-card: 0 4px 20px -5px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 4px 24px -4px hsl(220 30% 5% / 0.45);
+    --shadow-overlay: 0 40px 80px -40px hsl(220 80% 5% / 0.7);
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -123,6 +138,23 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: var(--font-size-h1);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: var(--font-size-h2);
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-size: var(--font-size-h3);
+    line-height: 1.2;
   }
   
   @keyframes fade-in {
@@ -142,5 +174,9 @@ All colors MUST be HSL.
   
   html {
     scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.2);
   }
 }
