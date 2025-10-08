@@ -15,7 +15,11 @@ export default defineConfig(({ mode }) => {
   const envBase = normalizeBasePath(env.VITE_BASE_PATH);
   const repoSlug = process.env.GITHUB_REPOSITORY?.split("/")[1];
   const repoBase = normalizeBasePath(repoSlug);
-  const base = envBase ?? repoBase ?? "/";
+  const packageName = process.env.npm_package_name?.startsWith("@")
+    ? process.env.npm_package_name.split("/")[1]
+    : process.env.npm_package_name;
+  const packageBase = normalizeBasePath(packageName);
+  const base = envBase ?? repoBase ?? packageBase ?? "/";
 
   return {
     base,
