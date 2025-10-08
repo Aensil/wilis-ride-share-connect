@@ -34,33 +34,31 @@ const TerminosCondiciones = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">1. Introducción y aceptación</h2>
             <p className="text-muted-foreground">
-              Estos términos regulan el acceso y uso de los canales de WILIS S.A.S ("WILIS"), sociedad identificada con
-              NIT {nit}, domiciliada en Medellín, Antioquia. Al contactarnos para coordinar viajes colaborativos aceptas
-              estas condiciones. Si no estás de acuerdo con alguna disposición, abstente de utilizar nuestros servicios.
+              Estos términos regulan el acceso y uso de los canales de WILIS S.A.S, sociedad identificada con NIT {nit}, domiciliada en Medellín, Antioquia. Al
+              contactarnos para coordinar viajes colaborativos aceptas estas condiciones. Si no estás de acuerdo con alguna disposición, abstente de utilizar nuestros
+              servicios.
             </p>
             <p className="text-muted-foreground">
-              WILIS puede actualizar estos términos en cualquier momento. Las modificaciones se publicarán en este sitio e
-              indicarán la fecha de vigencia. El uso continuado de los servicios después de los cambios implica la
-              aceptación de la versión actualizada.
+              WILIS S.A.S puede actualizar estos términos en cualquier momento. Las modificaciones se publicarán en este sitio e indicarán la fecha de vigencia. El uso
+              continuado de los servicios después de los cambios implica la aceptación de la versión actualizada.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">2. Alcance del servicio</h2>
             <p className="text-muted-foreground">
-              WILIS coordina manualmente el contacto entre conductores particulares con cupos disponibles y pasajeros que
-              requieren viajar principalmente entre municipios de Boyacá y Bogotá. No prestamos un servicio de transporte
-              público, no operamos plataformas de reservas automáticas ni asumimos obligaciones propias de empresas de
-              transporte. Cada trayecto se acuerda directamente entre las personas involucradas.
+              WILIS S.A.S coordina manualmente el contacto entre conductores particulares con cupos disponibles y pasajeros que requieren viajar principalmente entre
+              municipios de Boyacá y Bogotá. No prestamos un servicio de transporte público, no operamos plataformas de reservas automáticas ni asumimos obligaciones
+              propias de empresas de transporte. Cada trayecto se acuerda directamente entre las personas involucradas.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">3. Requisitos de los usuarios</h2>
             <p className="text-muted-foreground">
-              Para participar debes ser mayor de 18 años, suministrar información veraz y actualizada, y contar con
-              capacidad legal para celebrar acuerdos. El uso indebido de los canales de WILIS, la suplantación de
-              identidad o la omisión de datos relevantes conlleva la suspensión o exclusión inmediata del programa.
+              Para participar debes ser mayor de 18 años, suministrar información veraz y actualizada, y contar con capacidad legal para celebrar acuerdos. El uso
+              indebido de los canales de WILIS S.A.S, la suplantación de identidad o la omisión de datos relevantes conlleva la suspensión o exclusión inmediata del
+              programa.
             </p>
           </section>
 
@@ -81,8 +79,8 @@ const TerminosCondiciones = () => {
               </li>
             </ol>
             <p className="text-muted-foreground">
-              WILIS no garantiza la disponibilidad de cupos ni la realización del viaje. Nuestro rol es facilitar la
-              comunicación y acompañar el seguimiento hasta la fecha del trayecto.
+              WILIS S.A.S no garantiza la disponibilidad de cupos ni la realización del viaje. Nuestro rol es facilitar la comunicación y acompañar el seguimiento hasta
+              la fecha del trayecto.
             </p>
           </section>
 
@@ -118,19 +116,17 @@ const TerminosCondiciones = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">7. Pagos y contribuciones</h2>
             <p className="text-muted-foreground">
-              Los aportes económicos se acuerdan directamente entre conductor y pasajeros para cubrir gastos reales del
-              trayecto (gasolina, peajes, parqueaderos u otros costos asociados). WILIS no fija tarifas, no administra
-              dinero de los usuarios y no cobra comisiones. Cualquier transferencia de dinero se efectúa entre las partes
-              involucradas.
+              Los aportes económicos se acuerdan directamente entre conductor y pasajeros para cubrir gastos reales del trayecto (gasolina, peajes, parqueaderos u
+              otros costos asociados). WILIS S.A.S no fija tarifas, no administra dinero de los usuarios y no cobra comisiones. Cualquier transferencia de dinero se
+              efectúa entre las partes involucradas.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">8. Comunicaciones oficiales</h2>
             <p className="text-muted-foreground">
-              Las comunicaciones oficiales de WILIS se realizan a través de los canales publicados en este sitio web y del
-              correo {contactEmail}. No solicitamos contraseñas ni información bancaria mediante enlaces externos. Si
-              recibes mensajes sospechosos, notifícanos inmediatamente.
+              Las comunicaciones oficiales de WILIS S.A.S se realizan a través de los canales publicados en este sitio web y del correo {contactEmail}. No solicitamos
+              contraseñas ni información bancaria mediante enlaces externos. Si recibes mensajes sospechosos, notifícanos inmediatamente.
             </p>
             <p className="text-muted-foreground">
               El intercambio de datos realizado entre usuarios debe limitarse a la información relevante para coordinar el
@@ -158,23 +154,22 @@ const TerminosCondiciones = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">10. Responsabilidad y limitaciones</h2>
             <p className="text-muted-foreground">
-              WILIS actúa como intermediario tecnológico y social. No asumimos responsabilidad por accidentes, demoras,
-              pérdidas de objetos, disputas entre usuarios o cualquier daño derivado del viaje. Cada participante es
-              responsable de sus actuaciones y debe contar con la cobertura correspondiente (por ejemplo, SOAT y pólizas
-              voluntarias).
+              WILIS S.A.S actúa como intermediario tecnológico y social. No asumimos responsabilidad por accidentes, demoras, pérdidas de objetos, disputas entre
+              usuarios o cualquier daño derivado del viaje. Cada participante es responsable de sus actuaciones y debe contar con la cobertura correspondiente (por
+              ejemplo, SOAT y pólizas voluntarias).
             </p>
             <p className="text-muted-foreground">
-              WILIS no responde por fuerzas mayores, caso fortuito o hechos de terceros que impidan la realización del
-              trayecto. En caso de conocer incidentes de seguridad, colaboraremos con las autoridades competentes.
+              WILIS S.A.S no responde por fuerzas mayores, caso fortuito o hechos de terceros que impidan la realización del trayecto. En caso de conocer incidentes de
+              seguridad, colaboraremos con las autoridades competentes.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">11. Propiedad intelectual y uso del sitio</h2>
             <p className="text-muted-foreground">
-              Los contenidos, gráficos, textos, logotipos y materiales de este sitio pertenecen a WILIS o se usan con
-              autorización. No pueden copiarse, modificarse ni distribuirse sin consentimiento previo por escrito. No se
-              permite el uso del sitio para actividades fraudulentas o que infrinjan la ley colombiana.
+              Los contenidos, gráficos, textos, logotipos y materiales de este sitio pertenecen a WILIS S.A.S o se usan con autorización. No pueden copiarse,
+              modificarse ni distribuirse sin consentimiento previo por escrito. No se permite el uso del sitio para actividades fraudulentas o que infrinjan la ley
+              colombiana.
             </p>
           </section>
 

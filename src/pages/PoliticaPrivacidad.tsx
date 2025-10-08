@@ -34,8 +34,8 @@ const PoliticaPrivacidad = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">Introducción</h2>
               <p className="text-muted-foreground">
-                Cuando utilizas los servicios de WILIS S.A.S ("WILIS", "nosotros"), confías en que trataremos tus datos personales con responsabilidad.
-                Tomamos esa confianza muy en serio y trabajamos para darte claridad, seguridad y control sobre la información que compartes con nosotros.
+                Cuando utilizas los servicios de WILIS S.A.S, confías en que trataremos tus datos personales con responsabilidad. Tomamos esa confianza muy en serio y
+                trabajamos para darte claridad, seguridad y control sobre la información que compartes con nosotros.
               </p>
               <p className="text-muted-foreground">
                 Esta política explica qué datos recopilamos, por qué lo hacemos y cuáles son tus derechos. Al interactuar con nosotros (por ejemplo, al coordinar
@@ -53,7 +53,7 @@ const PoliticaPrivacidad = () => {
                   <strong>Datos personales:</strong> Información que identifica o puede identificar a una persona natural, como nombre, documento, teléfono o dirección.
                 </li>
                 <li>
-                  <strong>Usuario:</strong> Persona natural o representante de empresa que contacta a WILIS para coordinar traslados colaborativos como conductor o pasajero.
+                  <strong>Usuario:</strong> Persona natural o representante de empresa que contacta a WILIS S.A.S para coordinar traslados colaborativos como conductor o pasajero.
                 </li>
               </ul>
             </section>
@@ -61,7 +61,7 @@ const PoliticaPrivacidad = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">¿Qué es WILIS S.A.S?</h2>
               <p className="text-muted-foreground">
-                WILIS es una iniciativa de movilidad colaborativa que conecta manualmente a conductores con cupos disponibles y a pasajeros que necesitan viajar entre municipios de Boyacá y Bogotá. Operamos a través de canales como WhatsApp, correo electrónico y formularios de contacto para coordinar cada trayecto sin aplicaciones móviles ni procesos automatizados masivos.
+                WILIS S.A.S es una iniciativa de movilidad colaborativa que conecta manualmente a conductores con cupos disponibles y a pasajeros que necesitan viajar entre municipios de Boyacá y Bogotá. Operamos a través de canales como WhatsApp, correo electrónico y formularios de contacto para coordinar cada trayecto sin aplicaciones móviles ni procesos automatizados masivos.
               </p>
               <p className="text-muted-foreground">
                 Nuestro compromiso es facilitar el contacto entre usuarios, acompañar la coordinación de los viajes y resguardar la información personal necesaria para hacerlo de manera segura.
@@ -104,7 +104,7 @@ const PoliticaPrivacidad = () => {
                   <li>Herramientas contables o de facturación autorizadas en Colombia cuando debamos emitir comprobantes.</li>
                 </ul>
                 <p className="text-muted-foreground">
-                  Estos proveedores tratan los datos siguiendo sus propias políticas de privacidad y bajo acuerdos vigentes con WILIS. No vendemos ni alquilamos datos personales a terceros.
+                Estos proveedores tratan los datos siguiendo sus propias políticas de privacidad y bajo acuerdos vigentes con WILIS S.A.S. No vendemos ni alquilamos datos personales a terceros.
                 </p>
               </div>
             </section>
@@ -183,7 +183,7 @@ const PoliticaPrivacidad = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">Actualizaciones de esta política</h2>
               <p className="text-muted-foreground">
-                WILIS puede modificar esta política para reflejar cambios normativos o mejoras en nuestros procesos. La versión vigente se publicará en este sitio web con la fecha de actualización correspondiente. Si los cambios son sustanciales, te informaremos por nuestros canales habituales.
+                WILIS S.A.S puede modificar esta política para reflejar cambios normativos o mejoras en nuestros procesos. La versión vigente se publicará en este sitio web con la fecha de actualización correspondiente. Si los cambios son sustanciales, te informaremos por nuestros canales habituales.
               </p>
             </section>
 
