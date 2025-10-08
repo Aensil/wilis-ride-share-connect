@@ -38,7 +38,7 @@ export const setupTrackingStub = () => {
     }
 
     if (typeof console !== "undefined" && typeof console.info === "function") {
-      console.info("[WILIS tracking stub]", detail);
+      console.info("[WILIS S.A.S tracking stub]", detail);
     }
   });
 

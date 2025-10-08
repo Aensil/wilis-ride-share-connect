@@ -5,7 +5,7 @@ import { contact } from "@/config/contact";
 import { CtaLink } from "@/ui/CtaLink";
 
 const links = [
-  { href: "#descripcion", label: "Qué es WILIS" },
+  { href: "#descripcion", label: "Qué es WILIS S.A.S" },
   { href: "#beneficios", label: "Beneficios" },
   { href: "#conductores", label: "Conductores" },
   { href: "#pasajeros", label: "Pasajeros" },

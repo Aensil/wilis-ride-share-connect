@@ -134,7 +134,7 @@ const LeadForm = () => {
           </div>
           <div>
             <label htmlFor="role" className="mb-1 block text-sm font-semibold text-foreground">
-              ¿Cómo quieres usar WILIS?
+              ¿Cómo quieres usar WILIS S.A.S?
             </label>
             <select
               id="role"
