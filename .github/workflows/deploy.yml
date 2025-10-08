@@ -20,9 +20,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -38,7 +35,6 @@ jobs:
       - name: Build site
         env:
           VITE_SITE_URL: https://wiliss.com
-          VITE_BASE_PATH: /
         run: npm run build
 
       - name: Prepare dist
