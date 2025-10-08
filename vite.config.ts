@@ -12,14 +12,32 @@ export default defineConfig(({ mode }) => {
     return withLeadingSlash.endsWith("/") ? withLeadingSlash : `${withLeadingSlash}/`;
   };
 
-  const envBase = normalizeBasePath(env.VITE_BASE_PATH);
   const repoSlug = process.env.GITHUB_REPOSITORY?.split("/")[1];
   const repoBase = normalizeBasePath(repoSlug);
   const packageName = process.env.npm_package_name?.startsWith("@")
     ? process.env.npm_package_name.split("/")[1]
     : process.env.npm_package_name;
   const packageBase = normalizeBasePath(packageName);
-  const base = envBase ?? repoBase ?? packageBase ?? "/";
+  const envBase = normalizeBasePath(env.VITE_BASE_PATH);
+
+  const resolveSiteBase = () => {
+    const rawSiteUrl = env.VITE_SITE_URL?.trim() || process.env.SITE_URL?.trim() || "https://wiliss.com";
+    try {
+      const url = new URL(rawSiteUrl);
+      if (url.pathname && url.pathname !== "/") {
+        return normalizeBasePath(url.pathname);
+      }
+      if (url.hostname.endsWith("github.io")) {
+        return repoBase ?? packageBase;
+      }
+      return "/";
+    } catch {
+      return undefined;
+    }
+  };
+
+  const siteBase = resolveSiteBase();
+  const base = envBase ?? siteBase ?? repoBase ?? packageBase ?? "/";
 
   return {
     base,
