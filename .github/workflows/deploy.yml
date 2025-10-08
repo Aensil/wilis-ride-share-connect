@@ -41,6 +41,10 @@ jobs:
         run: |
           touch dist/.nojekyll
           echo "wiliss.com" > dist/CNAME
+          cp dist/index.html dist/404.html
+          mkdir -p dist/terminos-condiciones dist/politica-privacidad
+          cp dist/index.html dist/terminos-condiciones/index.html
+          cp dist/index.html dist/politica-privacidad/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
